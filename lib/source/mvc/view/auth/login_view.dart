@@ -1,14 +1,13 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:maihuan/core/widget/images.dart';
-import 'package:maihuan/core/widget/radius.dart';
-import 'package:maihuan/mvc/common/elevated_button.dart';
-import 'package:maihuan/mvc/common/text_form_field.dart';
-import 'package:maihuan/mvc/common/text_title.dart';
-import 'package:maihuan/mvc/controller/login_controller.dart';
-import 'package:maihuan/mvc/view/register_view.dart';
-import '../../core/widget/sizedbox.dart';
+import 'package:maihuan/source/mvc/view/auth/register_view.dart';
+import '../../../../core/common/app_images.dart';
+import '../../../../core/common/app_space.dart';
+import '../../common/elevated_button.dart';
+import '../../common/text_form_field.dart';
+import '../../common/text_title.dart';
+import '../../controller/auth/login_controller.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -20,10 +19,10 @@ class LoginView extends StatelessWidget {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Image.asset(ImageWidget.logo, height: 120, width: 120,),
-          SizedWidget.h10,
+          Image.asset(AppImages.logo, height: 120, width: 120,),
+          AppSpace.h10,
           TextTitle(text: "Account"),
-          SizedWidget.h6,
+          AppSpace.h6,
           CustomTextField(
             controller: controller.phoneController,
             hintText: "Phone number",
@@ -32,9 +31,9 @@ class LoginView extends StatelessWidget {
             validator: (value) =>
             (value ==null || value.isEmpty)? "Email required" : null,
           ),
-          SizedWidget.h6,
+          AppSpace.h6,
           TextTitle(text: "Password"),
-          SizedWidget.h6,
+          AppSpace.h6,
           CustomTextField(
             controller: controller.passController,
             hintText: "Password",
@@ -43,13 +42,13 @@ class LoginView extends StatelessWidget {
             validator: (value) =>
             (value==null || value.isEmpty)? "Password required": null,
           ),
-          SizedWidget.h6,
+          AppSpace.h6,
           GestureDetector(
             onTap: (){
 
             },
               child: TextTitle(text: "Forget password?")),
-          SizedWidget.h6,
+          AppSpace.h6,
           CustomElevatedButton(
               text: "Login",
               onPressed: (){
@@ -63,7 +62,7 @@ class LoginView extends StatelessWidget {
               fontSize: 16,
               textColor: Colors.white,
           ),
-          SizedWidget.h6,
+          AppSpace.h6,
           RichText(
               text: TextSpan(
             text: "You are not account?",

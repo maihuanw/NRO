@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SizedWidget {
+class AppSpace {
+  AppSpace._();
   static const h4 = SizedBox(height: 4);
   static const h6 = SizedBox(height: 6);
   static const h8 = SizedBox(height: 8);

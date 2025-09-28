@@ -1,4 +1,5 @@
-class ImageWidget {
+class AppImages {
+  AppImages._();
 
   static const String logo = "assets/image/quythuong.jpg";
 

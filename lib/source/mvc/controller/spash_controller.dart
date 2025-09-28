@@ -1,8 +1,6 @@
 import 'dart:async';
-
 import 'package:get/get.dart';
-
-import '../view/login_view.dart';
+import '../view/auth/login_view.dart';
 
 class SplashController extends GetxController{
 

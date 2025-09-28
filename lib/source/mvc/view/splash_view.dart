@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:maihuan/mvc/controller/spash_controller.dart';
+import '../controller/spash_controller.dart';
 
 class SplashView extends StatelessWidget {
   const SplashView({super.key});
