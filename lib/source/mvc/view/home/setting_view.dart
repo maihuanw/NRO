@@ -5,6 +5,17 @@ class SettingView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Cài đặt"),
+        backgroundColor: Colors.blue,
+      ),
+      body: const Center(
+        child: Text(
+          "Đây là màn hình Cài đặt",
+          style: TextStyle(fontSize: 18),
+        ),
+      ),
+    );
   }
 }
